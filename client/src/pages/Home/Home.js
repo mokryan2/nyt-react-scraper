@@ -7,6 +7,20 @@ import Article from "../../components/Articles"
 
 class Home extends Component {
 
+render() {
+    return(
+        <Container>
+            <Row>
+                <Col size="md-12">
+                <Jumbotron>
+
+                </Jumbotron>
+                </Col>
+            </Row>
+        </Container>
+    )
+}
+
 }
 
 export default Home;
