@@ -13,6 +13,18 @@ class Home extends Component {
         endYear: "",
         message: "Search for Articles"
     };
+
+    handleInputChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    };
+
+    handleFormSubmit = event =>{
+        event.preventDefault();
+    };
+
     render() {
         return (
             <Container>
@@ -20,7 +32,18 @@ class Home extends Component {
                     <Col size="md-12">
                         <Jumbotron />
                     </Col>
+                    <Col size="md-12">
+                        <Card title="Search">
+                        </Card>
+                    </Col>
                 </Row>
+                <Row>
+                    <Col size="md-12">
+                    <Card title="Results">
+                    </Card>
+                    </Col>
+                </Row>
+
             </Container>
         )
     }
