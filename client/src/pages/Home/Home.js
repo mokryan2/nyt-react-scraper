@@ -13,7 +13,7 @@ class Home extends Component {
         q: "",
         startYear: "",
         endYear: "",
-        message: "Search for Articles"
+        message: "Search for Articles!"
     };
 
     getArticles = () => {

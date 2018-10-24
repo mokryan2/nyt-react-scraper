@@ -1,9 +1,8 @@
 const router = require("express").Router();
-const articleRoutes = require("./articles");
-const nytRoutes = require("./NYT");
+const articleController = require("../../controllers/nytController");
 
-router.use("/articles", articleRoutes);
-
-router.use("/nyt", nytRoutes);
+router
+  .route("/")
+  .get(articleController.findAll);
 
 module.exports = router;
