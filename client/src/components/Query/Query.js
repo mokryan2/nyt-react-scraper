@@ -23,7 +23,7 @@ const Query = props => (
                 className="form-control"
                 id="start-year"
                 type="number"
-                value={props.start_year}
+                value={props.startYear}
                 placeholder="2010"
                 name="start_year"
                 onChange={props.handleInputChange}
@@ -36,14 +36,14 @@ const Query = props => (
                 className="form-control"
                 id="end-year"
                 type="number"
-                value={props.end_year}
+                value={props.endYear}
                 placeholder="2018"
                 name="end_year"
                 onChange={props.handleInputChange}
                 required
             />
         </div>
-        <div className="pull-right">
+        <div>
             <button
                 onClick={props.handleFormSubmit}
                 type="submit"
