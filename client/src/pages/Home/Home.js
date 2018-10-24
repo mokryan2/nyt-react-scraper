@@ -34,6 +34,8 @@ class Home extends Component {
                     </Col>
                     <Col size="md-12">
                         <Card title="Search">
+                        <Query 
+                        />
                         </Card>
                     </Col>
                 </Row>
